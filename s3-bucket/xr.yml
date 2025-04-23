@@ -1,0 +1,7 @@
+apiVersion: aws.platform.example.org/v1alpha1
+kind: S3Bucket
+metadata:
+  name: my-test-bucket
+spec:
+  bucketName: crossplane-test-01
+  region: ap-south-1
