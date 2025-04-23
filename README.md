@@ -61,6 +61,18 @@
     --namespace crossplane-system \
     --create-namespace
 
+**Create a Kubernetes secret with the AWS credentials**
+
+    kubectl create secret \
+    generic aws-secret \
+    -n crossplane-system \
+    --from-file=creds=./aws-credentials.txt
+
+**Create a ProviderConfig**
+
+     kubectl apply -f providerconfig.yml
+
+
 
 
 
